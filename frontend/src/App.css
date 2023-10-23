@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.fill-head {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.fill-para {
+  font-size: 30px;
+  width: 70vw;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.fill-btn {
+  width: 70vw;
+  padding: 10px 0;
+  font-size: 30px;
+  border: 1px solid black;
+  background-color: #fff;
+  color: #000;
+  margin-top: 50px;
+  transition: all 0.5s ease;
+  background-size: 100% 0%;
+  background-image: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.fill-btn:hover {
+  background-size: 100% 100%;
+  color: white;
+}
+
+.fill-btn:active {
+  transform: scale(0.98);
+}
+
+.formpage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.details {
+  width: 30vw;
+  height: 100vh;
+  position: fixed;
+  background: #fedd04;
+}
+
+.details img {
+  width: 50px;
+  padding: 1rem;
+  user-select: none;
+}
+
+.details span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2rem;
+  height: 10vh;
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  font-weight: 500;
+}
+
+.details p {
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.small {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #303030;
+}
+
+.details ol {
+  margin-left: 40px;
+  margin-top: 20px;
+  list-style: lower-alpha;
+}
+
+.details ol li,
+.details ol p,
+#note {
+  margin-top: 10px;
+  font-size: unset;
+  color: #5c5c5c;
+}
+
+#icons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+
+#icons a {
+  padding: 10px;
+  color: black;
+}
+
+.main-form {
+  width: 70vw;
+  height: fit-content;
+  float: right;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.main-form h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.main-form input,
+.main-form select {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 70px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #dadada;
+}
+
+.main-form select {
+  width: 83%;
+}
+
+.main-form input:hover {
+  border: 1px solid grey;
+}
+
+.main-form input:focus {
+  border: 1px solid grey;
+}
+
+.main-form label {
+  display: block;
+  font-size: 25px;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-form label[for="male"],
+.main-form label[for="female"],
+.main-form label[for="others"] {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.main-form input[type="radio"] {
+  display: inline-block;
+  width: fit-content;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+#male {
+  margin-left: 100px;
+}
+
+.heading {
+  padding-top: 50px;
+}
+
+.btn {
+  margin-top: 40px;
+  width: 80%;
+  padding: 10px;
+  margin-left: 80px;
+  font-size: 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: #222121;
+  border: 1px solid #222121;
+}
+
+#reset-btn {
+  margin-top: 10px !important;
+  border: 1px solid grey;
+  background-color: #fff;
+  color: #000;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.main-form select {
+  width: 83%;
+}
+
+.success{
+    width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #000;
+      color: #fff;
+}
+
+.success-head{
+    margin-bottom: 30px;
+      text-align: center;
+      font-size: 4rem;
+      font-family: 'Nunito Sans', sans-serif;
+}
+
+.success-btn {
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  height: 70px;
+  color: white;
+  background: rgb(93, 198, 240);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.success-btn:hover {
+  transform: scale(1.05);
+}
+
+.success-btn:active {
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    height: fit-content;
+  }
+
+  .fill-head {
+    font-size: 55px;
+  }
+
+  .fill-para {
+    width: 90vw;
+    font-size: 20px;
+  }
+
+  .details {
+    display: block;
+    width: 100vw;
+    position: inherit;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .main-form h3 {
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  .main-form {
+    width: 100vw;
+    float: unset;
+  }
+
+  .main-form label,
+  .main-form input,
+  .main-form select {
+    margin-left: 30px;
+  }
+
+  #male {
+    margin-left: 30px;
+  }
+
+  .main-form input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+
+  .main-form select {
+    width: 85%;
+  }
+
+  .btn {
+    margin-left: 40px;
+  }
+  .success-head{
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .success-btn{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .container {
+    height: fit-content;
+  }
+
+  .fill-para {
+    width: 80vw;
+    font-size: 25px;
+  }
+
+  .fill-head {
+    font-size: 70px;
+  }
+
+  .details {
+    width: 40vw;
+  }
+
+  .main-form {
+    width: 60vw;
+  }
+
+  .main-form label,
+  .main-form input {
+    margin-left: 30px;
+  }
+.main-form label,
+.main-form input,
+.main-form select {
+  margin-left: 30px;
+}
+
+#male {
+  margin-left: 30px;
+}
+
+.main-form input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.main-form select {
+  width: 85%;
+}
+
+.btn {
+  margin-left: 40px;
+}
+  .main-form select {
+    width: 83%;
+  }
+}
+@media only screen and (max-width: 1240px) and (min-width: 900px){
+  .success-head{
+    font-size: 3.5rem;
+    margin-top: 40px;
+  }
+  .success-btn{
+    width: 40%;
+    font-size: 1.8rem;
+  }
+}
