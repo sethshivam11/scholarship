@@ -114,9 +114,9 @@ app.listen(port, () => console.log(`App is listening on port ${port}`));
 // -------------------------- Deployment ------------------------------
 
 if (env == "production") {
-  app.use(express.static(path.join(__dirname1), "build"));
+  app.use(express.static(path.join(__dirname1), "/frontend/build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname1, "build", "index.html"));
+    res.sendFile(path.resolve(__dirname1, "frontend","build", "index.html"));
   });
 } else {
   app.get("/", (req, res) => {
