@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const FormPage = () => {
+  const host = process.env.REACT_APP_HOST;
   const navigate = useNavigate();
   const [details, setDetails] = useState({
     name: "",
@@ -28,7 +29,7 @@ const FormPage = () => {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/api/form", {
+    fetch(`${host}/api/form`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +129,7 @@ const FormPage = () => {
         />
         <label htmlFor="phone">Phone</label>
         <input
-          type="phone"
+          type="number"
           name="phone"
           id="phone"
           value={details.phone}

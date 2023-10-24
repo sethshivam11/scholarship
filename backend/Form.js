@@ -95,6 +95,10 @@ communication: {
         required: true
     }
   },
+date: {
+    type: String,
+    default: Date
+}
 });
 const Form = mongoose.model("form", FormSchema);
 Form.createIndexes();
