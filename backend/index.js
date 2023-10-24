@@ -5,12 +5,10 @@ const dotenv = require("dotenv").config();
 const port = process.env.PORT;
 const path = require("path");
 const __dirname1 = path.resolve();
-const cors = require("cors");
 const Form = require("./Form");
 
 connectDb();
 
-app.use(cors());
 app.use(express.json());
 
 app.post("/api/form", async (req, res) => {
