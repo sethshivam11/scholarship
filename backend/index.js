@@ -37,26 +37,26 @@ app.post("/api/form", async (req, res) => {
     indian,
   } = req.body;
   if (
-    !name &&
-    !email &&
-    !phone &&
-    !father &&
-    !mother &&
-    !gender &&
-    !dob &&
-    !qualification &&
-    !institution &&
-    !board &&
-    !marks &&
-    !appearing &&
-    !college &&
-    !university &&
-    !lastmarks &&
-    !flat &&
-    !town &&
-    !city &&
-    !district &&
-    !state &&
+    !name ||
+    !email ||
+    !phone ||
+    !father ||
+    !mother ||
+    !gender ||
+    !dob ||
+    !qualification ||
+    !institution ||
+    !board ||
+    !marks ||
+    !appearing ||
+    !college ||
+    !university ||
+    !lastmarks ||
+    !flat ||
+    !town ||
+    !city ||
+    !district ||
+    !state ||
     !indian
   ) {
     return res

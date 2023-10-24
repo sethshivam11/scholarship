@@ -9,54 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 0;
-}
-
-.fill-head {
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 90px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.fill-para {
-  font-size: 30px;
-  width: 70vw;
-  margin-top: 40px;
-  text-align: justify;
-}
-
-.fill-btn {
-  width: 70vw;
-  padding: 10px 0;
-  font-size: 30px;
-  border: 1px solid black;
-  background-color: #fff;
-  color: #000;
-  margin-top: 50px;
-  transition: all 0.5s ease;
-  background-size: 100% 0%;
-  background-image: linear-gradient(#000, #000);
-  background-repeat: no-repeat;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.fill-btn:hover {
-  background-size: 100% 100%;
-  color: white;
-}
-
-.fill-btn:active {
-  transform: scale(0.98);
-}
-
 .formpage {
   width: 100vw;
   height: 100vh;
@@ -226,22 +178,22 @@ body {
   width: 83%;
 }
 
-.success{
-    width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: #000;
-      color: #fff;
+.success {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
 }
 
-.success-head{
-    margin-bottom: 30px;
-      text-align: center;
-      font-size: 4rem;
-      font-family: 'Nunito Sans', sans-serif;
+.success-head {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .success-btn {
@@ -317,12 +269,13 @@ body {
   .btn {
     margin-left: 40px;
   }
-  .success-head{
+  .success-head {
     font-size: 2.2rem;
     margin-top: 50px;
     margin-bottom: 40px;
   }
-  .success-btn{
+
+  .success-btn {
     width: 80%;
     font-size: 1.2rem;
   }
@@ -354,38 +307,45 @@ body {
   .main-form input {
     margin-left: 30px;
   }
-.main-form label,
-.main-form input,
-.main-form select {
-  margin-left: 30px;
-}
 
-#male {
-  margin-left: 30px;
-}
+  .main-form label,
+  .main-form input,
+  .main-form select {
+    margin-left: 30px;
+  }
 
-.main-form input[type="radio"] {
-  margin-right: 5px;
-  margin-left: 15px;
-}
+  #male {
+    margin-left: 30px;
+  }
 
-.main-form select {
-  width: 85%;
-}
+  .main-form input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
 
-.btn {
-  margin-left: 40px;
-}
+  .main-form select {
+    width: 85%;
+  }
+
+  .btn {
+    margin-left: 40px;
+  }
+
   .main-form select {
     width: 83%;
   }
 }
-@media only screen and (max-width: 1240px) and (min-width: 900px){
-  .success-head{
+
+@media only screen and (max-width: 1240px) and (min-width: 900px) {
+  .success{
+  min-height: 100vh;
+  }
+  .success-head {
     font-size: 3.5rem;
     margin-top: 40px;
   }
-  .success-btn{
+
+  .success-btn {
     width: 40%;
     font-size: 1.8rem;
   }

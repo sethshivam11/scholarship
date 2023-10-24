@@ -93,16 +93,16 @@ const FormPage = () => {
         <p className="small">Contact Us</p>
         <div id="icons">
           <a href="https://gmail.com" target="blank" rel="noreferrer">
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
           </a>
           <a href="https://facebook.com" target="blank" rel="noreferrer">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </a>
           <a href="https://instagram.com/" target="blank" rel="noreferrer">
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://twitter.com/" target="blank" rel="noreferrer">
-            <i class="fa-brands fa-x-twitter"></i>
+            <i className="fa-brands fa-x-twitter"></i>
           </a>
         </div>
       </div>
@@ -154,7 +154,7 @@ const FormPage = () => {
           onChange={handleChange}
           required
         />
-        <label htmlFor="gender">Gender</label>
+        <label htmlFor="male">Gender</label>
         <input
           type="radio"
           name="gender"
